@@ -1,43 +1,49 @@
-> [!IMPORTANT]
-> **This repository is deprecated.** For current Codex skill and plugin examples, use the [OpenAI Plugins repository](https://github.com/openai/plugins). If you want to add your own skills to Codex, follow the [Build plugins](https://developers.openai.com/codex/plugins/build) guide, which includes instructions for creating a skill-only plugin.
+# MacroShot — Website Giới Thiệu & Landing Page (v1.2.1)
 
-# Agent Skills
+Trang giới thiệu chính thức cho dự án khởi nghiệp công nghệ **MacroShot (v1.2.1)** — Giải pháp ghi nhận dinh dưỡng món ăn Việt không ma sát thông qua thị giác máy tính và thuật toán cá nhân hóa Macro theo thể trạng.
 
-Agent Skills are folders of instructions, scripts, and resources that AI agents can discover and use to perform at specific tasks. Write once, use everywhere.
+---
 
-Codex uses skills to help package capabilities that teams and individuals can use to complete specific tasks in a repeatable way. This repository catalogs skills for use and distribution with Codex.
+## 🌟 Điểm nổi bật của Website
 
-Learn more:
-- [Using skills in Codex](https://developers.openai.com/codex/skills)
-- [Create custom skills in Codex](https://developers.openai.com/codex/skills/create-skill)
-- [Agent Skills open standard](https://agentskills.io)
+- **Anti-AI Slop Aesthetic:** Thiết kế hiện đại, tinh tế, sử dụng bảng màu Forest Emerald, Deep Ink, Crisp Lime và Mint, bố cục content-first trực quan, chuẩn khả năng tiếp cận WCAG 2.1 AA.
+- **Mô phỏng AI Food Scanner trực tiếp (Interactive Live Playground):** Bóc tách nguyên liệu món Việt (Phở bò tái nạm, Cơm tấm sườn bì chả, Bún chả Hà Nội, Cơm nhà cá kho) với thanh trượt tỷ lệ khẩu phần tự động tính toán lại Calo, Protein, Carbs, Fat theo thời gian thực (Real-time Linear Scaling).
+- **Công cụ tính toán Calo & Macro theo thể trạng:** Ứng dụng động cơ toán học **Mifflin-St Jeor** kết hợp hệ số vận động PAL và tốc độ mục tiêu cá nhân hóa (🐢 Rùa, 🐇 Thỏ, 🐆 Báo).
+- **Hệ sinh thái 6 Phân hệ nghiệp vụ:** Thể hiện trọn vẹn 6 module cốt lõi của MacroShot v1.2.1.
+- **4 Routes độc lập:** Trang chủ (`/`), Trung tâm hỗ trợ (`/support/`), Chính sách quyền riêng tư (`/privacy/`), Điều khoản dịch vụ (`/terms/`).
 
-## Installing a skill
+---
 
-Skills in [`.system`](skills/.system/) are automatically installed in the latest version of Codex.
+## ⚡ Hướng Dẫn Cài Đặt Nhanh
 
-To install [curated](skills/.curated/) or [experimental](skills/.experimental/) skills, you can use the `$skill-installer` inside Codex.
+Xem tài liệu chi tiết tại [SETUP-GUIDE.md](SETUP-GUIDE.md).
 
-Curated skills can be installed by name (defaults to `skills/.curated`):
+```bash
+# Xem trước cục bộ (Local Preview)
+npm run dev
 
-```
-$skill-installer gh-address-comments
-```
+# Kiểm tra tính toàn vẹn (Routes & Links)
+npm run check
 
-For experimental skills, specify the skill folder. For example:
-
-```
-$skill-installer install the create-plan skill from the .experimental folder
-```
-
-Or provide the GitHub directory URL:
-
-```
-$skill-installer install https://github.com/openai/skills/tree/main/skills/.experimental/create-plan
+# Đóng gói bản tĩnh (Production Build)
+npm run build
 ```
 
-After installing a skill, restart Codex to pick up new skills.
+---
 
-## License
+## 📁 Cấu Trúc Mã Nguồn
 
-The license of an individual skill can be found directly inside the skill's directory inside the `LICENSE.txt` file.
+```
+├── index.html            # Trang chủ Landing Page (Interactive Demo & Calculator)
+├── assets/
+│   ├── site.css          # Hệ thống CSS Design Tokens & Layouts
+│   ├── site.js           # Xử lý tương tác Scanner & Macro Calculator
+│   ├── favicon.svg       # Biểu tượng thương hiệu
+│   └── vietnamese-meal.jpg # Hình ảnh minh họa mâm cơm Việt
+├── support/              # Trang Trung tâm hỗ trợ
+├── privacy/              # Trang Chính sách quyền riêng tư (Bản dự thảo)
+├── terms/                # Trang Điều khoản dịch vụ (Bản dự thảo)
+├── config.js             # Cấu hình phát hành (App Version, Status)
+├── scripts/              # Bộ công cụ build, test link và local server
+└── SETUP-GUIDE.md        # Hướng dẫn setup cho team & prompt cho AI agent
+```

@@ -1,0 +1,648 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MacroShot — Ghi Calo & Macro Món Việt Chuẩn Xác Từ Bức Ảnh</title>
+  <meta name="description" content="MacroShot giúp bạn ghi nhận dinh dưỡng món Việt không ma sát: chụp ảnh bữa ăn, tự động bóc tách thành phần, tùy chỉnh khẩu phần dân dã và theo dõi calo, macro khoa học.">
+  <link rel="icon" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/site.css">
+  <script src="config.js" defer></script>
+  <script src="assets/site.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Bỏ qua đến nội dung chính</a>
+
+  <!-- Header -->
+  <header class="site-header">
+    <nav class="nav container" aria-label="Điều hướng chính">
+      <a class="brand" href="/" aria-label="Trang chủ MacroShot">
+        <img class="brand-mark" src="assets/favicon.svg" width="32" height="32" alt="Logo MacroShot">
+        <span>MacroShot</span>
+        <span class="brand-badge">v1.2.1</span>
+      </a>
+
+      <button class="menu-button" aria-expanded="false" aria-controls="main-menu" aria-label="Mở menu điều hướng">
+        Menu
+      </button>
+
+      <div class="nav-links" id="main-menu">
+        <a href="#quy-trinh">Quy trình</a>
+        <a href="#mo-phong">Mô phỏng AI</a>
+        <a href="#cong-cu-calo">Tính Calo & Macro</a>
+        <a href="#he-sinh-thai">Tính năng</a>
+        <a href="#faq">Câu hỏi</a>
+        <a href="support/">Hỗ trợ</a>
+        <a class="nav-cta" href="#mo-phong">
+          <span>Thử nghiệm</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">
+            <span class="eyebrow-pill">
+              <span class="eyebrow-dot"></span>
+              Dinh dưỡng chuẩn món Việt · Không ma sát
+            </span>
+          </div>
+          <h1>Chụp bữa ăn. Bóc tách calo & macro món Việt.</h1>
+          <p class="lede">
+            Không còn nỗi lo phải cân đo từng gam hay tìm kiếm nguyên liệu đơn lẻ tốn thời gian. MacroShot ứng dụng thị giác máy tính bóc tách bữa ăn Việt, ước tính Calo & Macro và cho phép bạn chỉnh khẩu phần linh hoạt trước khi lưu.
+          </p>
+
+          <div class="button-group">
+            <a class="btn btn-primary" href="#mo-phong">
+              <span>Trải nghiệm mô phỏng</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+            <a class="btn btn-secondary" href="#cong-cu-calo">Tính Calo mục tiêu</a>
+          </div>
+
+          <div class="status-badge">
+            <span class="dot"></span>
+            <span>Giai đoạn thử nghiệm nội bộ · Dự kiến ra mắt trên iOS</span>
+          </div>
+
+          <div class="hero-meta-list">
+            <div class="hero-meta-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Nhận diện món ăn & gia vị Việt</span>
+            </div>
+            <div class="hero-meta-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Đơn vị dân dã: bát, tô, đĩa, khúc</span>
+            </div>
+            <div class="hero-meta-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Dự báo thời gian về đích khoa học</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Mockup -->
+        <div class="hero-visual-card">
+          <div class="mockup-media">
+            <img src="assets/vietnamese-meal.jpg" width="1200" height="900" alt="Mâm cơm gia đình Việt Nam gồm cá kho tộ, canh rau, rau muống xào và cơm trắng">
+            <div class="scanner-overlay-tags">
+              <div class="scanner-hud-header">
+                <span class="hud-pill hud-pill-live">
+                  <span class="eyebrow-dot" style="background:#fff"></span> AI Vision Active
+                </span>
+                <span class="hud-pill">Món Việt Nam</span>
+              </div>
+              <div class="scanner-detected-chips">
+                <span class="detected-chip">✓ Cá basa kho (1 khúc ~140g)</span>
+                <span class="detected-chip">✓ Cơm trắng (1 bát ~180g)</span>
+                <span class="detected-chip">✓ Rau muống xào (1 đĩa)</span>
+                <span class="detected-chip">✓ Canh rau ngót (1 chén)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="mockup-results-panel">
+            <div class="results-header">
+              <strong>Mâm cơm gia đình (Bữa trưa)</strong>
+              <span>Ước tính khẩu phần tiêu chuẩn</span>
+            </div>
+            <div class="macro-grid-cards">
+              <div class="macro-mini-card cal">
+                <span class="val">~580</span>
+                <span class="label">Calories (kcal)</span>
+              </div>
+              <div class="macro-mini-card">
+                <span class="val">34 g</span>
+                <span class="label">Protein</span>
+              </div>
+              <div class="macro-mini-card">
+                <span class="val">65 g</span>
+                <span class="label">Carbs</span>
+              </div>
+              <div class="macro-mini-card">
+                <span class="val">18 g</span>
+                <span class="label">Fat</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Workflow Section -->
+    <section class="section soft" id="quy-trinh">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">Quy trình 3 bước</div>
+            <h2>Ghi nhận dinh dưỡng không ma sát</h2>
+          </div>
+          <p>
+            MacroShot sử dụng mô hình Multimodal Vision để đưa ra gợi ý ban đầu. Bạn là người kiểm duyệt thông tin, linh hoạt chỉnh sửa khẩu phần và quyết định lưu vào nhật ký.
+          </p>
+        </div>
+
+        <div class="steps-grid">
+          <article class="step-card">
+            <span class="step-num">BƯỚC 01</span>
+            <h3>Chụp hoặc tải ảnh</h3>
+            <p>
+              Chụp trực tiếp bữa ăn trước mặt qua Camera hoặc chọn ảnh sẵn trong thư viện điện thoại. Hệ thống tối ưu hóa và truyền tải ảnh tức thì.
+            </p>
+            <div class="step-feature-tag">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span>Phân tích trong tích tắc</span>
+            </div>
+          </article>
+
+          <article class="step-card">
+            <span class="step-num">BƯỚC 02</span>
+            <h3>Kiểm tra & Tinh chỉnh khẩu phần</h3>
+            <p>
+              Xem danh sách các món được bóc tách. Dễ dàng xóa món nhận nhầm, thêm món bị sót và điều chỉnh khẩu phần theo đơn vị quen thuộc (bát, tô, khúc) hoặc kéo trượt gram.
+            </p>
+            <div class="step-feature-tag">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Real-time Linear Scaling</span>
+            </div>
+          </article>
+
+          <article class="step-card">
+            <span class="step-num">BƯỚC 03</span>
+            <h3>Đồng bộ Nhật ký 4 bữa</h3>
+            <p>
+              Lưu vào Bữa sáng, Bữa trưa, Bữa tối hoặc Bữa phụ. Ngân sách calo và thanh tiến độ Protein, Carbs, Fat trong ngày sẽ được cập nhật đồng bộ tức thì.
+            </p>
+            <div class="step-feature-tag">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+              <span>Tự động cân bằng ngân sách</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Food Scanner Live Playground -->
+    <section class="section" id="mo-phong">
+      <div class="container">
+        <div class="section-head center">
+          <div class="eyebrow">Trải nghiệm tương tác</div>
+          <h2>Mô phỏng bóc tách món ăn Việt</h2>
+          <p>
+            Chọn một món ăn đặc trưng dưới đây và kéo thanh trượt khẩu phần để trải nghiệm cơ chế bóc tách thành phần và tự động tính toán lại Macro thời gian thực.
+          </p>
+        </div>
+
+        <div class="playground-box">
+          <!-- Meal Navigation Tabs -->
+          <div class="playground-nav" role="tablist" aria-label="Danh sách món ăn mẫu">
+            <button class="tab-btn" data-meal="pho" role="tab" aria-selected="false">🍲 Phở Bò Tái Nạm</button>
+            <button class="tab-btn" data-meal="com-tam" role="tab" aria-selected="false">🍖 Cơm Tấm Sườn Bì</button>
+            <button class="tab-btn" data-meal="bun-cha" role="tab" aria-selected="false">🥢 Bún Chả Hà Nội</button>
+            <button class="tab-btn active" data-meal="com-nha" role="tab" aria-selected="true">🍚 Mâm Cơm Gia Đình</button>
+          </div>
+
+          <div class="playground-content">
+            <!-- Dish Breakdown Info -->
+            <div>
+              <div class="dish-header-badge">
+                <span class="dish-name-title" id="demo-dish-name">Cơm Nhà: Cá Basa Kho & Canh Rau</span>
+                <span class="detected-chip" id="demo-portion-text">1 mâm cơm gia đình (1.0x)</span>
+              </div>
+
+              <p style="font-size: 0.88rem; color: var(--muted); margin-bottom: 12px;">
+                Thành phần nguyên liệu được AI nhận diện & bóc tách chi tiết:
+              </p>
+
+              <div class="ingredient-breakdown-list" id="demo-ingredients-list">
+                <!-- Injected via JavaScript -->
+              </div>
+
+              <!-- Portion Slider -->
+              <div class="portion-control-bar">
+                <div class="portion-slider-label">
+                  <span>Điều chỉnh khẩu phần ăn thực tế:</span>
+                  <strong style="color:var(--green-dark)" id="demo-portion-value">1.0x khẩu phần</strong>
+                </div>
+                <input type="range" class="portion-range-input" id="demo-portion-slider" min="0.5" max="2.0" step="0.25" value="1.0" aria-label="Thanh trượt khẩu phần">
+                <div class="portion-ticks">
+                  <span>0.5x (Ăn ít)</span>
+                  <span>1.0x (Chuẩn)</span>
+                  <span>1.5x (Khá nhiều)</span>
+                  <span>2.0x (Gấp đôi)</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Nutrition Output Card -->
+            <div class="dish-visual-wrap">
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:16px;">
+                <span class="eyebrow" style="margin:0;">Tổng giá trị dinh dưỡng</span>
+                <span class="hud-pill" style="color:var(--green-deep); background:var(--green-light); border:none;">Review & Edit</span>
+              </div>
+
+              <div style="background:var(--paper); border:1px solid var(--line); border-radius:18px; padding:24px; text-align:center; margin-bottom:16px; box-shadow:var(--shadow-sm);">
+                <span style="font-size:0.8rem; color:var(--muted); text-transform:uppercase; font-weight:750; letter-spacing:0.05em;">Tổng năng lượng ước tính</span>
+                <div style="font-size:2.8rem; font-weight:850; color:var(--green-dark); line-height:1.1; margin:6px 0;" id="demo-val-cal">
+                  580 kcal
+                </div>
+                <span style="font-size:0.75rem; color:var(--muted-light);">* Tính toán tuyến tính theo tỷ lệ khẩu phần</span>
+              </div>
+
+              <div class="macro-grid-cards">
+                <div class="macro-mini-card">
+                  <span class="val" style="color:#2563eb;" id="demo-val-p">34 g</span>
+                  <span class="label">Đạm (Protein)</span>
+                </div>
+                <div class="macro-mini-card">
+                  <span class="val" style="color:#d97706;" id="demo-val-c">65 g</span>
+                  <span class="label">Carbohydrate</span>
+                </div>
+                <div class="macro-mini-card">
+                  <span class="val" style="color:#dc2626;" id="demo-val-f">18 g</span>
+                  <span class="label">Chất béo (Fat)</span>
+                </div>
+                <div class="macro-mini-card">
+                  <span class="val" style="color:var(--green-deep);">Dân dã</span>
+                  <span class="label">Đơn vị đo</span>
+                </div>
+              </div>
+
+              <div style="margin-top:16px; padding:12px 14px; background:var(--warm-accent); border:1px solid #f2dfba; border-radius:12px; font-size:0.78rem; color:#634b28;">
+                💡 <strong>Mẹo:</strong> Bạn có thể bấm xóa nguyên liệu không ăn (ví dụ bỏ bớt cơm) hoặc thêm món tráng miệng chỉ với 1 chạm trước khi xác nhận lưu nhật ký.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Mifflin-St Jeor & Pace Calculator -->
+    <section class="section soft" id="cong-cu-calo">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">Động cơ thuật toán v1.2.1</div>
+            <h2>Tính toán Calo & Phân bổ Macro theo Thể trạng</h2>
+          </div>
+          <p>
+            MacroShot sử dụng công thức khoa học <strong>Mifflin-St Jeor</strong> kết hợp mức vận động (PAL) và tốc độ mục tiêu cá nhân để thiết lập ngân sách dinh dưỡng tối ưu cho bạn.
+          </p>
+        </div>
+
+        <div class="calc-card">
+          <!-- Input Form -->
+          <form class="calc-inputs-col" id="macro-calc-form" onsubmit="event.preventDefault()">
+            <div class="form-group">
+              <label>Giới tính sinh học</label>
+              <div style="display:flex; gap:16px; margin-top:4px;">
+                <label style="display:flex; align-items:center; gap:8px; font-weight:600; cursor:pointer;">
+                  <input type="radio" name="gender" value="male" checked> Nam (+5)
+                </label>
+                <label style="display:flex; align-items:center; gap:8px; font-weight:600; cursor:pointer;">
+                  <input type="radio" name="gender" value="female"> Nữ (-161)
+                </label>
+              </div>
+            </div>
+
+            <div class="form-row-2">
+              <div class="form-group">
+                <label for="calc-weight">Cân nặng hiện tại (kg)</label>
+                <input type="number" id="calc-weight" class="form-control" value="68" min="30" max="250">
+              </div>
+              <div class="form-group">
+                <label for="calc-height">Chiều cao (cm)</label>
+                <input type="number" id="calc-height" class="form-control" value="172" min="100" max="230">
+              </div>
+            </div>
+
+            <div class="form-row-2">
+              <div class="form-group">
+                <label for="calc-age">Độ tuổi</label>
+                <input type="number" id="calc-age" class="form-control" value="25" min="15" max="100">
+              </div>
+              <div class="form-group">
+                <label for="calc-pal">Mức độ vận động (PAL)</label>
+                <select id="calc-pal" class="form-control">
+                  <option value="1.2">Ít vận động (Bàn giấy - x1.2)</option>
+                  <option value="1.375" selected>Vận động nhẹ (1-3 ngày/tuần - x1.375)</option>
+                  <option value="1.55">Vận động vừa (3-5 ngày/tuần - x1.55)</option>
+                  <option value="1.725">Năng động cao (6-7 ngày/tuần - x1.725)</option>
+                  <option value="1.9">Vận động viên / Lao động nặng (x1.9)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Tốc độ mục tiêu giảm cân (Goal Pace)</label>
+              <div class="pace-selector-grid">
+                <div class="pace-option-btn" data-pace="275" tabindex="0" role="button" aria-label="Tốc độ Rùa">
+                  <span class="icon">🐢</span>
+                  <span class="title">Rùa (Bền vững)</span>
+                  <span class="sub">~0.25 kg/tuần (-275 kcal)</span>
+                </div>
+                <div class="pace-option-btn active" data-pace="550" tabindex="0" role="button" aria-label="Tốc độ Thỏ">
+                  <span class="icon">🐇</span>
+                  <span class="title">Thỏ (Khuyên dùng)</span>
+                  <span class="sub">~0.5 kg/tuần (-550 kcal)</span>
+                </div>
+                <div class="pace-option-btn" data-pace="825" tabindex="0" role="button" aria-label="Tốc độ Báo">
+                  <span class="icon">🐆</span>
+                  <span class="title">Báo (Quyết liệt)</span>
+                  <span class="sub">~0.75 kg/tuần (-825 kcal)</span>
+                </div>
+              </div>
+            </div>
+          </form>
+
+          <!-- Output Display -->
+          <div class="calc-results-col">
+            <div class="calc-headline-stat">
+              <span class="caption">Ngân sách Calo mỗi ngày</span>
+              <span class="num" id="calc-target-cal">1850</span>
+              <span style="font-size:0.85rem; color:var(--green-dark); font-weight:700;">kcal / ngày</span>
+            </div>
+
+            <div>
+              <div style="display:flex; justify-content:space-between; font-size:0.85rem; color:var(--muted); margin-bottom:8px;">
+                <span>BMR (Chuyển hóa cơ bản): <strong id="calc-bmr" style="color:var(--ink);">1655 kcal</strong></span>
+                <span>TDEE (Tiêu hao tổng): <strong id="calc-tdee" style="color:var(--ink);">2276 kcal</strong></span>
+              </div>
+
+              <div class="macro-split-bars">
+                <div class="split-bar-item">
+                  <span class="pill-p">🥩 Đạm cơ sở (2.2g × kg):</span>
+                  <span id="calc-p">150 g (32%)</span>
+                </div>
+                <div class="split-bar-item">
+                  <span class="pill-c">🍚 Carbohydrate (75% dư):</span>
+                  <span id="calc-c">188 g (41%)</span>
+                </div>
+                <div class="split-bar-item">
+                  <span class="pill-f">🥑 Chất béo (1.0g/kg + 25%):</span>
+                  <span id="calc-f">56 g (27%)</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="meal-ratio-hint">
+              📊 <strong>Gợi ý phân bổ 4 bữa:</strong> Sáng (25%) · Trưa (35%) · Tối (30%) · Bữa phụ (10%)
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Product Modules Ecosystem (The 6 modules) -->
+    <section class="section" id="he-sinh-thai">
+      <div class="container">
+        <div class="section-head center">
+          <div class="eyebrow">Hệ sinh thái tính năng v1.2.1</div>
+          <h2>6 Phân hệ nghiệp vụ thiết kế cho lối sống hiện đại</h2>
+          <p>
+            Mọi tính năng đều được tối ưu hóa nhằm loại bỏ rào cản ghi chép, duy trì kỷ luật ăn uống bền bỉ và cá nhân hóa theo mục tiêu thể hình thực tế.
+          </p>
+        </div>
+
+        <div class="modules-grid">
+          <!-- Module 1 -->
+          <article class="module-card">
+            <span class="module-tag">Module 01</span>
+            <h3>Định danh & Onboarding</h3>
+            <p>Khảo sát sinh trắc học chuẩn xác (Chiều cao, cân nặng, độ tuổi, PAL) kết hợp tốc độ mục tiêu (🐢 Rùa, 🐇 Thỏ, 🐆 Báo) với cơ chế bảo mật xác thực an toàn.</p>
+            <ul class="module-list">
+              <li>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Thuật toán Mifflin-St Jeor cá nhân hóa</span>
+              </li>
+              <li>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Đăng nhập OAuth2 bảo mật cao</span>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Module 2 -->
+          <article class="module-card">
+            <span class="module-tag">Module 02</span>
+            <h3>AI Food Scanner Engine</h3>
+            <p>Mô hình Multimodal Vision nhận diện chi tiết món Việt, bóc tách nguyên liệu kèm màn hình Review & Edit cho phép chỉnh nhanh theo đơn vị dân dã hoặc trượt gram.</p>
+            <ul class="module-list">
+              <li>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Tải ảnh phân tán (Presigned URL) siêu tốc</span>
+              </li>
+              <li>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Real-time Linear Scaling tự động tính lại Macro</span>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Module 3 -->
+          <article class="module-card">
+            <span class="module-tag">Module 03</span>
+            <h3>Nhật ký 4 Bữa & Quick Add</h3>
+            <p>Quản lý tách biệt 4 bữa ăn (Sáng, Trưa, Tối, Snack) với cơ sở dữ liệu 2 tầng (recipes và ingredients). Tích hợp Quick Add để ghi nhanh calo khi ăn ngoài hàng quán.</p>
+            <ul class="module-list">
+              <li>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Tính năng Quick Add không cần mở thư viện</span>
+              </li>
+              <li>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Cửa sổ chỉnh sửa lịch sử an toàn 30 ngày</span>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Module 4 -->
+          <article class="module-card">
+            <span class="module-tag">Module 04</span>
+            <h3>Dashboard & 7-day EMA Analytics</h3>
+            <p>Vòng tròn Calo thời gian thực (Mục tiêu - Đã nạp + Vận động) kết hợp biểu đồ cân nặng làm mịn bằng thuật toán 7-day EMA, loại bỏ biến động ảo do tích nước.</p>
+            <ul class="module-list">
+              <li>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Thanh ngân sách 3 nhóm chất Protein / Carb / Fat</span>
+              </li>
+              <li>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Dự báo về đích dựa trên 1kg mỡ ≈ 7700 kcal</span>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Module 5 -->
+          <article class="module-card">
+            <span class="module-tag">Module 05</span>
+            <h3>Gamification & Streak Freeze</h3>
+            <p>Duy trì thói quen với máy trạng thái chuỗi ngày thông minh theo múi giờ địa phương, tích hợp cơ chế Đóng băng chuỗi (Streak Freeze) tự động bảo vệ khi lỡ quên 1 ngày.</p>
+            <ul class="module-list">
+              <li>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Vé Streak Freeze cứu chuỗi ngày bận rộn</span>
+              </li>
+              <li>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Nhắc nhở giờ ăn thông minh theo khung giờ</span>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Module 6 -->
+          <article class="module-card">
+            <span class="module-tag">Module 06</span>
+            <h3>Tùy biến & Chế độ ăn kiêng</h3>
+            <p>Cập nhật cân nặng định kỳ để hệ thống tự động tái tính toán mục tiêu; hỗ trợ đa dạng trường phái ăn uống như Cân bằng, High-Protein, Low-Carb, Keto và chuyển đổi Metric/Imperial.</p>
+            <ul class="module-list">
+              <li>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Tùy chỉnh % Macro theo kế hoạch riêng</span>
+              </li>
+              <li>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Chuyển đổi linh hoạt giữa hệ Mét (kg, cm) và Imperial</span>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scientific & Health Transparency Notice -->
+    <section class="section">
+      <div class="container">
+        <div class="health-note-box">
+          <div>
+            <div class="eyebrow" style="color:#92400e;">Tính minh bạch & Khoa học</div>
+            <h2>Mọi bữa ăn đều có khoảng biến thiên tự nhiên.</h2>
+          </div>
+          <div>
+            <p>
+              Khẩu phần ăn thực tế, gia vị nêm nếm, lượng dầu mỡ khi chiên xào và phong cách nấu nướng của từng vùng miền luôn tạo ra những chênh lệch dinh dưỡng nhất định. Vì vậy, tính năng Review & Edit của MacroShot luôn trao toàn quyền tinh chỉnh lại cho bạn.
+            </p>
+            <p>
+              <strong>Lưu ý y tế:</strong> MacroShot là công cụ hỗ trợ xây dựng thói quen theo dõi dinh dưỡng và kiểm soát calo; ứng dụng không thay thế lời khuyên y khoa, chẩn đoán hay phác đồ điều trị từ các bác sĩ và chuyên gia y tế.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section soft" id="faq">
+      <div class="container">
+        <div class="section-head center">
+          <div class="eyebrow">Giải đáp thắc mắc</div>
+          <h2>Những câu hỏi thường gặp</h2>
+          <p>
+            Thông tin minh bạch dựa trên năng lực hệ thống thực tế đang được phát triển trong phiên bản v1.2.1.
+          </p>
+        </div>
+
+        <div class="faq-wrap">
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>MacroShot có nhận diện tốt các món ăn nhà nấu và hàng quán Việt không?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-panel">
+              Ứng dụng được huấn luyện đặc biệt cho ẩm thực Việt Nam (từ các món cơm nhà như thịt kho, cá kho, canh chua đến món đường phố như phở, bún chả, cơm tấm). Mọi kết quả phân tích là giá trị ước tính thông minh; bạn luôn có thể xem lại các thành phần bóc tách và tùy chỉnh định lượng trước khi lưu.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>Nếu AI nhận diện thiếu hoặc sai nguyên liệu thì xử lý thế nào?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-panel">
+              Màn hình Review & Edit cho phép bạn chỉ bằng 1 chạm để: xóa món nhận nhầm, bấm thêm món bị sót, hoặc đổi khẩu phần theo các đơn vị dân dã quen thuộc (tô, bát, đĩa, cái) hoặc kéo trượt gram. Hệ thống sẽ tự động tính toán lại Calo và 3 chất Macro (Protein, Carbs, Fat) ngay lập tức theo thời gian thực.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>Hình ảnh bữa ăn của tôi được xử lý và bảo mật ra sao?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-panel">
+              Ảnh chụp được tải qua kênh mã hóa an toàn (Presigned URL) và chuyển đến dịch vụ AI chuyên biệt để phân tích thành phần dinh dưỡng. MacroShot tuân thủ nguyên tắc tôn trọng quyền riêng tư và sẽ công bố chính sách dữ liệu chi tiết cùng cơ chế xóa tài khoản trước ngày phát hành chính thức trên App Store.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>MacroShot có tính phí sử dụng không?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-panel">
+              Hiện tại MacroShot đang trong giai đoạn hoàn thiện phiên bản v1.2.1 và thử nghiệm kín. Mô hình sử dụng chi tiết và các gói tiện ích sẽ được công bố chính thức khi ứng dụng phát hành trên App Store.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>Tôi có thể xóa tài khoản và dữ liệu cá nhân của mình không?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-panel">
+              Có. Ứng dụng tích hợp quy trình yêu cầu xóa tài khoản và toàn bộ dữ liệu lịch sử bữa ăn trực tiếp từ phần cài đặt tài khoản, đáp ứng đầy đủ tiêu chuẩn kiểm duyệt của Apple App Store Guidelines.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA Band -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-band-box">
+          <div>
+            <h2>Bắt đầu theo dõi dinh dưỡng thông minh hơn.</h2>
+            <p>
+              Đơn giản hóa thói quen ghi lại bữa ăn hàng ngày, giữ vững chuỗi ngày kỷ luật và hiểu rõ từng nhóm chất nạp vào cơ thể.
+            </p>
+          </div>
+          <div style="flex-shrink:0;">
+            <a class="btn btn-primary" style="background:#ffffff; color:var(--ink); border-color:#ffffff; font-weight:800;" href="#mo-phong">
+              <span>Thử nghiệm mô phỏng</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/" style="margin-bottom:8px;">
+          <img class="brand-mark" src="assets/favicon.svg" width="30" height="30" alt="">
+          <span>MacroShot</span>
+        </a>
+        <p>Giải pháp ghi nhận dinh dưỡng món Việt không ma sát bằng thị giác máy tính.</p>
+        <p style="font-size:0.8rem; color:var(--muted-light); margin-top:10px;">
+          © <span data-year></span> MacroShot. Bản dựng tiền phát hành (v1.2.1) phục vụ review và kiểm thử.
+        </p>
+      </div>
+
+      <div class="footer-links-group">
+        <a href="support/">Trung tâm hỗ trợ</a>
+        <a href="privacy/">Chính sách quyền riêng tư</a>
+        <a href="terms/">Điều khoản sử dụng</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

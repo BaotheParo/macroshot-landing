@@ -1,11 +1,20 @@
-## Contributing
+# Đóng góp phát triển Landing Page MacroShot
 
-### Community values
+Chào mừng bạn tham gia đóng góp cho dự án MacroShot Landing Page!
 
-- **Be kind and inclusive.** Treat others with respect; we follow the [Contributor Covenant](https://www.contributor-covenant.org/).
-- **Assume good intent.** Written communication is hard - err on the side of generosity.
-- **Teach & learn.** If you spot something confusing, open an issue or PR with improvements.
+## Quy trình đóng góp
 
-### Security & responsible AI
-
-Have you discovered a vulnerability or have concerns about model output? Please e-mail **security@openai.com** and we will respond promptly.
+1. Tạo nhánh mới (`feature/ten-tinh-nang` hoặc `fix/ten-loi`).
+2. Thực hiện thay đổi trong mã nguồn (`index.html`, `assets/`, v.v.).
+3. Kiểm tra tính toàn vẹn và không làm gãy link bằng lệnh:
+   ```bash
+   npm run check
+   ```
+4. Đảm bảo chạy preview kiểm tra giao diện trên nhiều kích thước màn hình (Mobile, Tablet, Desktop):
+   ```bash
+   npm run dev
+   ```
+5. Đóng gói bản phân phối trước khi tạo Pull Request:
+   ```bash
+   npm run build
+   ```

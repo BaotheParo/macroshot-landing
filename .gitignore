@@ -1,6 +1,29 @@
-# macOS system files
-.DS_Store
+# Dependencies
+node_modules/
 
-# Python bytecode files
+# Build outputs
+dist/
+
+# Agent skills & bundles (Excluded from landing page repo)
+agent-skills-*/
+agent-skills-*.zip
+skills/
+qa/
+.agents/
+.gemini/
+.claude/
+.claude-plugin/
+.codex-plugin/
+.opencode/
+
+# System and Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
+
+# Temp files
+scratch/
 __pycache__/
 *.pyc
