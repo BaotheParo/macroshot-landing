@@ -3,6 +3,8 @@ window.MACROSHOT_CONFIG = Object.freeze({
   releaseStatus: "coming-soon",
   appStoreUrl: null,
   supportEmail: null,
+  instagramUrl: "https://www.instagram.com/macroshot_app/",
   screenshots: [],
   productName: "MacroShot"
 });
+
