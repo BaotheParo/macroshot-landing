@@ -5,7 +5,7 @@ window.MACROSHOT_CONFIG = Object.freeze({
   appStoreUrl: null,
   supportEmail: "giahuyto3107@gmail.com",
   instagramUrl: "https://www.instagram.com/macroshot_app/",
-  deletionFormUrl: "https://docs.google.com/forms/d/e/1FAIpQLSctBeAdrBmbFX-mKHkw2vUB27Gg8b0DB32sHn_lYows3B6Frg/viewform",
+  deletionFormUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfkfOYF7XD1ssR72S_Ib4PZiCYGVyLqi0vvT-VX6r54H1uurA/viewform",
   serviceProvider: "Harry To (To Gia Huy)",
   screenshots: [],
   productName: "MacroShot"
