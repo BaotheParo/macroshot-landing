@@ -1128,14 +1128,32 @@ h3 {
   position: sticky;
   top: 100px;
   align-self: start;
+  background: var(--soft);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 20px 18px;
+  max-height: calc(100vh - 120px);
+  overflow-y: auto;
+}
+.toc-title {
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--green-dark);
+  margin-bottom: 10px;
 }
 .toc a {
   display: block;
-  padding: 7px 0;
+  padding: 6px 0;
   color: var(--muted);
-  font-size: 0.9rem;
-  font-weight: 600;
+  font-size: 0.86rem;
+  font-weight: 650;
   transition: color 0.15s ease;
+  border-bottom: 1px solid rgba(223, 231, 226, 0.5);
+}
+.toc a:last-child {
+  border-bottom: none;
 }
 .toc a:hover {
   color: var(--green-dark);
@@ -1240,6 +1258,12 @@ h3 {
 
 .policy-panel.active {
   display: block;
+}
+
+.legal-layout.policy-panel.active {
+  display: grid;
+  grid-template-columns: 240px minmax(0, 1fr);
+  gap: 60px;
 }
 
 /* Responsive Media Queries */
