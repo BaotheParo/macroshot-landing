@@ -2,9 +2,9 @@
 <html lang="vi">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Chính Sách Quyền Riêng Tư (Privacy Policy) — MacroShot</title>
-  <meta name="description" content="Chính sách quyền riêng tư chính thức của ứng dụng MacroShot phát triển bởi Harry To (Tô Gia Huy) — hỗ trợ ngôn ngữ Tiếng Việt & English.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chính Sách Quyền Riêng Tư / Privacy Policy — MacroShot</title>
+  <meta name="description" content="Chính sách quyền riêng tư chính thức của ứng dụng MacroShot bởi Harry To (Tô Gia Huy) — Song ngữ Tiếng Việt & English.">
   <link rel="icon" href="../assets/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,38 +12,6 @@
   <link rel="stylesheet" href="../assets/site.css">
   <script src="../config.js" defer></script>
   <script src="../assets/site.js" defer></script>
-  <style>
-    .lang-switcher-bar {
-      display: flex;
-      gap: 10px;
-      margin-top: 20px;
-    }
-    .lang-btn {
-      background: var(--paper);
-      border: 2px solid var(--line);
-      border-radius: 999px;
-      padding: 8px 18px;
-      font-weight: 750;
-      font-size: 0.88rem;
-      color: var(--muted);
-      cursor: pointer;
-      transition: all 0.15s ease;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-    }
-    .lang-btn.active {
-      background: var(--ink);
-      color: #ffffff;
-      border-color: var(--ink);
-    }
-    .lang-content-block {
-      display: none;
-    }
-    .lang-content-block.active {
-      display: block;
-    }
-  </style>
 </head>
 <body>
   <a class="skip" href="#main">Bỏ qua đến nội dung chính</a>
@@ -51,7 +19,7 @@
   <header class="site-header">
     <nav class="nav container" aria-label="Điều hướng chính">
       <a class="brand" href="../">
-        <img class="brand-mark" src="../assets/favicon.svg" width="32" height="32" alt="">
+        <img class="brand-mark" src="../assets/favicon.svg" width="32" height="32" alt="MacroShot">
         <span>MacroShot</span>
       </a>
       <button class="menu-button" aria-expanded="false" aria-controls="main-menu">Menu</button>
@@ -68,135 +36,174 @@
   <main id="main">
     <section class="legal-hero">
       <div class="container">
-        <div class="eyebrow">Chính Sách Chính Thức · Effective Date: 2026-04-28</div>
-        <h1>Chính Sách Quyền Riêng Tư (Privacy Policy)</h1>
+        <div class="eyebrow">Chính Sách Chính Thức · Effective Date: 28/04/2026</div>
+        <h1>Chính Sách Quyền Riêng Tư / Privacy Policy</h1>
         <p class="lede">
-          Bản ghi đầy đủ thông tin thu thập, xử lý AI, quyền thiết bị và quy trình xóa tài khoản của ứng dụng MacroShot bởi <strong>Harry To (To Gia Huy)</strong>.
+          Ứng dụng <strong>MacroShot</strong> được phát triển bởi <strong>Harry To (Tô Gia Huy)</strong> ("Nhà cung cấp dịch vụ / Service Provider") dưới dạng dịch vụ Miễn phí ("AS IS").
         </p>
 
-        <!-- Language Switcher -->
-        <div class="lang-switcher-bar" role="tablist" aria-label="Chọn ngôn ngữ hiển thị">
-          <button class="lang-btn active" id="btn-lang-vi" onclick="togglePrivacyLang('vi')" role="tab" aria-selected="true">
+        <!-- Language Switcher Tabs -->
+        <div class="lang-switcher-wrap" role="tablist" aria-label="Chọn ngôn ngữ hiển thị">
+          <button class="lang-tab-btn active" id="tab-btn-vi" data-lang="vi" role="tab" aria-selected="true" aria-controls="panel-vi">
             <span>🇻🇳 Tiếng Việt</span>
           </button>
-          <button class="lang-btn" id="btn-lang-en" onclick="togglePrivacyLang('en')" role="tab" aria-selected="false">
-            <span>🇬🇧 English (Original)</span>
+          <button class="lang-tab-btn" id="tab-btn-en" data-lang="en" role="tab" aria-selected="false" aria-controls="panel-en">
+            <span>🇺🇸 English (Official)</span>
           </button>
         </div>
 
-        <div style="margin-top:16px; display:flex; gap:12px; flex-wrap:wrap;">
-          <a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSfkfOYF7XD1ssR72S_Ib4PZiCYGVyLqi0vvT-VX6r54H1uurA/viewform" target="_blank" rel="noopener" style="background:var(--green); border-color:var(--green);">
-            <span>Biểu mẫu Yêu cầu Xóa Dữ liệu (Google Form)</span>
+        <div style="margin-top:14px; display:flex; gap:12px; flex-wrap:wrap;">
+          <a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSfkfOYF7XD1ssR72S_Ib4PZiCYGVyLqi0vvT-VX6r54H1uurA/viewform" target="_blank" rel="noopener noreferrer" style="background:var(--ink); border-color:var(--ink);">
+            <span>Biểu mẫu Yêu cầu Xóa Dữ liệu (Form)</span>
           </a>
           <a class="btn btn-secondary" href="mailto:giahuyto3107@gmail.com">
-            <span>Email hỗ trợ: giahuyto3107@gmail.com</span>
+            <span>Email: giahuyto3107@gmail.com</span>
           </a>
         </div>
       </div>
     </section>
 
-    <!-- VIETNAMESE VERSION -->
-    <div class="container legal-layout lang-content-block active" id="privacy-vi">
+    <!-- VIETNAMESE VERSION PANEL -->
+    <div class="container legal-layout policy-panel active" id="panel-vi" role="tabpanel" aria-labelledby="tab-btn-vi">
       <aside class="toc" aria-label="Mục lục Tiếng Việt">
-        <a href="#vi-pham-vi">1. Tổng quan & Đơn vị vận hành</a>
-        <a href="#vi-du-lieu">2. Thu thập & Sử dụng Thông tin</a>
+        <a href="#vi-tong-quan">1. Tổng quan & Chủ sở hữu</a>
+        <a href="#vi-thu-thap">2. Thu thập & Sử dụng Thông tin</a>
         <a href="#vi-quyen-thiet-bi">3. Quyền truy cập Thiết bị</a>
-        <a href="#vi-cong-nghe-ai">4. Công nghệ Trí tuệ Nhân tạo (AI)</a>
-        <a href="#vi-ben-thu-ba">5. Dịch vụ Bên thứ ba</a>
-        <a href="#vi-xoa-tai-khoan">6. Chính sách Xóa Tài khoản & Dữ liệu</a>
-        <a href="#vi-tre-em">7. Bảo vệ Trẻ em</a>
-        <a href="#vi-bao-mat">8. An toàn & Bảo mật</a>
-        <a href="#vi-lien-he">9. Thay đổi & Liên hệ</a>
+        <a href="#vi-ai">4. Công nghệ Trí tuệ Nhân tạo</a>
+        <a href="#vi-ben-thu-ba">5. Truy cập của Bên thứ ba</a>
+        <a href="#vi-opt-out">6. Quyền Hủy Đăng ký (Opt-Out)</a>
+        <a href="#vi-xoa-tai-khoan">7. Chính sách Xóa Tài khoản</a>
+        <a href="#vi-tre-em">8. Quyền riêng tư Trẻ em</a>
+        <a href="#vi-bao-mat">9. An toàn & Bảo mật</a>
+        <a href="#vi-thay-doi">10. Thay đổi & Liên hệ</a>
       </aside>
 
       <article class="prose">
-        <h2 id="vi-pham-vi">1. Tổng quan & Đơn vị vận hành</h2>
+        <h2 id="vi-tong-quan">1. Tổng quan & Đơn vị vận hành</h2>
         <p>
-          Chính sách quyền riêng tư này áp dụng cho ứng dụng di động <strong>MacroShot</strong> (sau đây gọi là "Ứng dụng"), được phát triển bởi <strong>Harry To (To Gia Huy)</strong> (sau đây gọi là "Nhà cung cấp dịch vụ") dưới dạng một dịch vụ Miễn phí (Free service). Dịch vụ này được cung cấp nguyên bản ("AS IS").
+          Chính sách quyền riêng tư này áp dụng cho ứng dụng <strong>MacroShot</strong> (sau đây gọi là "Ứng dụng") dành cho thiết bị di động, được tạo bởi <strong>Harry To (Tô Gia Huy)</strong> (sau đây gọi là "Nhà cung cấp dịch vụ") dưới dạng dịch vụ Miễn phí. Dịch vụ này được cung cấp trên nguyên tắc nguyên trạng ("AS IS").
         </p>
 
-        <h2 id="vi-du-lieu">2. Thu thập & Sử dụng Thông tin</h2>
-        <p>Ứng dụng thu thập thông tin khi bạn tải xuống và sử dụng. Các thông tin này có thể bao gồm:</p>
+        <h2 id="vi-thu-thap">2. Thu thập và Sử dụng Thông tin</h2>
+        <p>Ứng dụng thu thập thông tin khi bạn tải xuống và sử dụng. Thông tin này có thể bao gồm:</p>
         <ul>
-          <li>Địa chỉ Giao thức Internet (IP address) của thiết bị;</li>
-          <li>Các trang bạn truy cập trong Ứng dụng, ngày giờ truy cập và thời lượng ở lại;</li>
-          <li>Tổng thời gian sử dụng Ứng dụng;</li>
-          <li>Hệ điều hành chạy trên thiết bị di động của bạn.</li>
+          <li>Địa chỉ Giao thức Internet (IP) của thiết bị bạn sử dụng.</li>
+          <li>Các trang trong Ứng dụng mà bạn truy cập, ngày giờ và thời gian dành cho các trang đó.</li>
+          <li>Tổng thời gian sử dụng Ứng dụng.</li>
+          <li>Hệ điều hành được cài đặt trên thiết bị di động của bạn.</li>
         </ul>
-        <p>Ứng dụng <strong>KHÔNG</strong> thu thập thông tin chính xác về vị trí địa lý của thiết bị di động.</p>
         <p>
-          Để có trải nghiệm tốt hơn, Nhà cung cấp dịch vụ có thể yêu cầu bạn cung cấp một số thông tin định danh cá nhân bao gồm: <strong>Họ tên, địa chỉ email, số điện thoại, User ID, ảnh chụp thực phẩm/bữa ăn, thông tin sức khỏe và thể hình (như cân nặng, chỉ số BMI, nhật ký dinh dưỡng) và nhật ký sự cố/thiết bị (device/crash logs)</strong>.
+          Ứng dụng <strong>KHÔNG</strong> thu thập thông tin vị trí địa lý chính xác (precise location) của thiết bị di động.
+        </p>
+        <p>
+          Để mang lại trải nghiệm tốt hơn trong quá trình sử dụng Ứng dụng, Nhà cung cấp dịch vụ có thể yêu cầu bạn cung cấp một số thông tin nhận dạng cá nhân nhất định, bao gồm nhưng không giới hạn ở: <strong>Họ tên của bạn, địa chỉ email, số điện thoại, User ID, hình ảnh món ăn, thông tin sức khỏe và thể hình (như cân nặng, chỉ số BMI, nhật ký dinh dưỡng) và nhật ký sự cố/thiết bị (crash logs)</strong>. Thông tin mà Nhà cung cấp dịch vụ yêu cầu sẽ được lưu giữ và sử dụng như được mô tả trong chính sách quyền riêng tư này.
+        </p>
+        <p>
+          Nhà cung cấp dịch vụ có thể sử dụng thông tin bạn đã cung cấp để liên hệ với bạn theo thời gian nhằm gửi các thông tin quan trọng, thông báo bắt buộc và các chương trình quảng bá.
         </p>
 
         <h2 id="vi-quyen-thiet-bi">3. Quyền truy cập Thiết bị (Device Permissions)</h2>
         <p>
-          Để cung cấp các chức năng cốt lõi, Ứng dụng có thể yêu cầu quyền truy cập vào <strong>Máy ảnh (Camera)</strong> và <strong>Thư viện ảnh (Photo Library)</strong> trên thiết bị.
+          Để cung cấp các chức năng cốt lõi, Ứng dụng có thể yêu cầu quyền truy cập <strong>Máy ảnh (Camera)</strong> và <strong>Thư viện ảnh (Photo Library)</strong> trên thiết bị của bạn. Quyền truy cập này hoàn toàn được sử dụng để cho phép bạn chụp hoặc tải ảnh món ăn lên nhằm phục vụ các tính năng nhận diện bằng AI và theo dõi calo.
         </p>
         <p>
-          Quyền truy cập này hoàn toàn dùng để cho phép bạn chụp hoặc tải ảnh thực phẩm lên phục vụ tính năng nhận diện món ăn bằng AI và theo dõi calo. Hình ảnh được xử lý an toàn và không chia sẻ với bên thứ ba không được ủy quyền. Bạn có thể rút lại quyền này bất kỳ lúc nào trong Cài đặt thiết bị.
+          Hình ảnh được xử lý an toàn và không bị chia sẻ với các bên thứ ba không được ủy quyền. Bạn có thể thu hồi các quyền này bất kỳ lúc nào thông qua phần Cài đặt trên thiết bị của mình.
         </p>
 
-        <h2 id="vi-cong-nghe-ai">4. Công nghệ Trí tuệ Nhân tạo (AI Technologies)</h2>
+        <h2 id="vi-ai">4. Công nghệ Trí tuệ Nhân tạo (AI Technologies)</h2>
         <p>
-          Ứng dụng sử dụng công nghệ AI để nâng cao trải nghiệm người dùng. Các thành phần AI có thể xử lý dữ liệu người dùng để phân tích hình ảnh, cá nhân hóa gợi ý dinh dưỡng hoặc tự động hóa tính năng. Mọi quá trình xử lý AI đều tuân thủ chính sách quyền riêng tư này và quy định pháp luật hiện hành.
+          Ứng dụng sử dụng công nghệ Trí tuệ Nhân tạo (AI) để nâng cao trải nghiệm người dùng và cung cấp các tính năng thông minh. Các thành phần AI có thể xử lý dữ liệu người dùng nhằm cung cấp nội dung cá nhân hóa, gợi ý dinh dưỡng hoặc chức năng bóc tách món ăn tự động.
+        </p>
+        <p>
+          Mọi quy trình xử lý AI đều được thực hiện theo đúng chính sách quyền riêng tư này và các quy định pháp luật hiện hành. Nếu bạn có câu hỏi về các tính năng AI hoặc quá trình xử lý dữ liệu, vui lòng liên hệ với Nhà cung cấp dịch vụ.
         </p>
 
         <h2 id="vi-ben-thu-ba">5. Truy cập của Bên thứ ba (Third Party Access)</h2>
         <p>
-          Chỉ các dữ liệu tổng hợp và ẩn danh mới định kỳ được gửi tới các dịch vụ bên ngoài để cải thiện Ứng dụng. Các đối tác dịch vụ bên thứ ba bao gồm:
+          Chỉ các dữ liệu tổng hợp và được ẩn danh mới được truyền định kỳ tới các dịch vụ bên ngoài nhằm hỗ trợ Nhà cung cấp dịch vụ cải thiện Ứng dụng và chất lượng phục vụ.
         </p>
+        <p>Ứng dụng có sử dụng các dịch vụ của bên thứ ba có chính sách quyền riêng tư độc lập về xử lý dữ liệu:</p>
         <ul>
-          <li><a href="https://www.google.com/policies/privacy/" target="_blank" rel="noopener">Google Play Services Privacy Policy</a></li>
-          <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Google Analytics for Firebase Privacy Policy</a></li>
-          <li><a href="https://firebase.google.com/support/privacy/" target="_blank" rel="noopener">Firebase Crashlytics Privacy Policy</a></li>
+          <li><a href="https://www.google.com/policies/privacy/" target="_blank" rel="noopener noreferrer">Google Play Services</a></li>
+          <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Google Analytics for Firebase</a></li>
+          <li><a href="https://firebase.google.com/support/privacy/" target="_blank" rel="noopener noreferrer">Firebase Crashlytics</a></li>
+        </ul>
+        <p>Nhà cung cấp dịch vụ có thể tiết lộ Thông tin do Người dùng Cung cấp và Thông tin Tự động Thu thập trong các trường hợp:</p>
+        <ul>
+          <li>Theo yêu cầu của pháp luật, chẳng hạn như tuân thủ trát đòi hầu tòa hoặc quy trình pháp lý tương tự;</li>
+          <li>Khi họ tin tưởng trung thực rằng việc tiết lộ là cần thiết để bảo vệ quyền lợi của mình, bảo vệ sự an toàn của bạn hoặc của người khác, điều tra gian lận hoặc phản hồi yêu cầu từ chính phủ;</li>
+          <li>Với các nhà cung cấp dịch vụ đáng tin cậy làm việc thay mặt họ, không có quyền sử dụng độc lập thông tin được tiết lộ và đã đồng ý tuân thủ các quy tắc trong tuyên bố quyền riêng tư này.</li>
         </ul>
 
-        <h2 id="vi-xoa-tai-khoan">6. Chính sách Xóa Tài khoản & Dữ liệu (Account and Data Deletion Policy)</h2>
+        <h2 id="vi-opt-out">6. Quyền Hủy Đăng ký & Dừng thu thập (Opt-Out Rights)</h2>
         <p>
-          Nhà cung cấp dịch vụ lưu giữ dữ liệu người dùng trong thời gian bạn sử dụng Ứng dụng. Bạn có toàn quyền yêu cầu <strong>xóa vĩnh viễn tài khoản và toàn bộ dữ liệu cá nhân liên quan</strong> bất kỳ lúc nào.
+          Bạn có thể dễ dàng dừng mọi hoạt động thu thập thông tin của Ứng dụng bằng cách gỡ cài đặt Ứng dụng. Bạn có thể sử dụng các quy trình gỡ cài đặt tiêu chuẩn có sẵn trên thiết bị di động của mình hoặc thông qua chợ ứng dụng.
         </p>
-        <div style="background:var(--soft); border:1px solid var(--line); border-radius:18px; padding:24px; margin:20px 0;">
-          <h3 style="margin-top:0; color:var(--green-dark);">Các cách thức yêu cầu xóa tài khoản:</h3>
-          <ul>
-            <li><strong>Trong ứng dụng (In-App):</strong> Truy cập màn hình <em>Settings (Cài đặt)</em> ➔ chọn nút <em>"Delete Account" (Xóa tài khoản)</em>.</li>
-            <li><strong>Trên Web (Google Form):</strong> Điền vào <a href="https://docs.google.com/forms/d/e/1FAIpQLSfkfOYF7XD1ssR72S_Ib4PZiCYGVyLqi0vvT-VX6r54H1uurA/viewform" target="_blank" rel="noopener"><strong>Biểu Mẫu Yêu Cầu Xóa Tài Khoản MacroShot</strong></a>.</li>
-            <li><strong>Qua Email:</strong> Gửi yêu cầu tới email <a href="mailto:giahuyto3107@gmail.com"><strong>giahuyto3107@gmail.com</strong></a>.</li>
+
+        <h2 id="vi-xoa-tai-khoan">7. Chính sách Xóa Tài khoản và Dữ liệu (Account & Data Deletion)</h2>
+        <p>
+          Nhà cung cấp dịch vụ sẽ lưu giữ dữ liệu do Người dùng cung cấp trong thời gian bạn sử dụng Ứng dụng và trong một khoảng thời gian hợp lý sau đó. Bạn có quyền yêu cầu <strong>xóa tài khoản của mình và toàn bộ dữ liệu cá nhân liên quan bất kỳ lúc nào</strong>.
+        </p>
+        
+        <div style="background:var(--soft); border:1px solid var(--line); border-radius:18px; padding:22px; margin:20px 0;">
+          <h3 style="margin-top:0; color:var(--green-dark);">Các phương thức yêu cầu xóa tài khoản:</h3>
+          <ul style="margin-bottom:0;">
+            <li><strong>Thực hiện trong Ứng dụng (In-App):</strong> Bạn có thể xóa tài khoản trực tiếp trong Ứng dụng bằng cách mở màn hình <em>Cài đặt (Settings)</em> và chọn tùy chọn <em>"Delete Account" (Xóa tài khoản)</em>.</li>
+            <li><strong>Thực hiện trên Web (Google Form):</strong> Bạn có thể gửi yêu cầu trực tuyến thông qua <a href="https://docs.google.com/forms/d/e/1FAIpQLSfkfOYF7XD1ssR72S_Ib4PZiCYGVyLqi0vvT-VX6r54H1uurA/viewform" target="_blank" rel="noopener noreferrer"><strong>Biểu mẫu Yêu cầu Xóa Tài khoản MacroShot (Google Form)</strong></a>.</li>
+            <li><strong>Liên hệ qua Email:</strong> Gửi yêu cầu trực tiếp đến Nhà cung cấp dịch vụ qua email: <a href="mailto:giahuyto3107@gmail.com"><strong>giahuyto3107@gmail.com</strong></a>.</li>
           </ul>
         </div>
-        <p>Sau khi nhận được yêu cầu, Nhà cung cấp dịch vụ sẽ xóa vĩnh viễn tài khoản và dữ liệu cá nhân của bạn (bao gồm nhật ký dinh dưỡng và hình ảnh) khỏi máy chủ trong thời gian hợp lý.</p>
+        <p>
+          Sau khi nhận được yêu cầu, Nhà cung cấp dịch vụ sẽ xóa vĩnh viễn tài khoản và dữ liệu cá nhân liên quan của bạn (bao gồm nhật ký sức khỏe và hình ảnh) khỏi hệ thống máy chủ trong khoảng thời gian hợp lý, ngoại trừ dữ liệu pháp luật yêu cầu phải lưu giữ.
+        </p>
 
-        <h2 id="vi-tre-em">7. Bảo vệ Trẻ em (Children)</h2>
-        <p>Ứng dụng không cố ý thu thập thông tin hoặc tiếp thị tới trẻ em dưới 13 tuổi. Nếu phát hiện dữ liệu của trẻ em dưới 13 tuổi, chúng tôi sẽ lập tức xóa khỏi máy chủ. Phụ huynh vui lòng liên hệ <a href="mailto:giahuyto3107@gmail.com">giahuyto3107@gmail.com</a> để xử lý.</p>
+        <h2 id="vi-tre-em">8. Quyền riêng tư của Trẻ em (Children)</h2>
+        <p>
+          Nhà cung cấp dịch vụ không sử dụng Ứng dụng để cố ý thu thập dữ liệu từ hoặc tiếp thị cho trẻ em dưới 13 tuổi. Ứng dụng không hướng tới bất kỳ ai dưới 13 tuổi.
+        </p>
+        <p>
+          Nếu phát hiện trẻ em dưới 13 tuổi đã cung cấp thông tin cá nhân, Nhà cung cấp dịch vụ sẽ lập tức xóa thông tin đó khỏi máy chủ. Nếu bạn là phụ huynh hoặc người giám hộ và biết con mình đã cung cấp thông tin, vui lòng liên hệ <a href="mailto:giahuyto3107@gmail.com">giahuyto3107@gmail.com</a> để chúng tôi thực hiện các biện pháp cần thiết.
+        </p>
 
-        <h2 id="vi-bao-mat">8. An toàn & Bảo mật (Security)</h2>
-        <p>Nhà cung cấp dịch vụ cam kết bảo vệ tính bảo mật thông tin bằng các giải pháp bảo vệ vật lý, điện tử và quy trình quản lý phù hợp.</p>
+        <h2 id="vi-bao-mat">9. An toàn và Bảo mật (Security)</h2>
+        <p>
+          Nhà cung cấp dịch vụ luôn quan tâm đến việc bảo vệ tính bảo mật thông tin của bạn. Chúng tôi cung cấp các biện pháp bảo vệ vật lý, điện tử và quy trình để bảo vệ thông tin được xử lý và duy trì.
+        </p>
 
-        <h2 id="vi-lien-he">9. Thay đổi & Liên hệ (Contact Us)</h2>
-        <p>Chính sách này có hiệu lực kể từ ngày <strong>28/04/2026</strong>. Nếu có thắc mắc, vui lòng liên hệ email: <a href="mailto:giahuyto3107@gmail.com"><strong>giahuyto3107@gmail.com</strong></a>.</p>
+        <h2 id="vi-thay-doi">10. Thay đổi, Sự đồng ý & Liên hệ</h2>
+        <p>
+          Chính sách quyền riêng tư này có thể được cập nhật theo thời gian. Nhà cung cấp dịch vụ sẽ thông báo cho bạn về bất kỳ thay đổi nào bằng cách cập nhật trang này với Chính sách quyền riêng tư mới. Ngày có hiệu lực: <strong>28/04/2026</strong>.
+        </p>
+        <p>
+          <strong>Sự đồng ý của bạn:</strong> Bằng việc sử dụng Ứng dụng, bạn đồng ý với việc xử lý thông tin của bạn như được nêu trong Chính sách quyền riêng tư này.
+        </p>
+        <p>
+          <strong>Liên hệ:</strong> Nếu bạn có bất kỳ câu hỏi nào về quyền riêng tư khi sử dụng Ứng dụng, vui lòng liên hệ qua email: <a href="mailto:giahuyto3107@gmail.com"><strong>giahuyto3107@gmail.com</strong></a> hoặc kênh Instagram: <a href="https://www.instagram.com/macroshot_app/" target="_blank" rel="noopener noreferrer"><strong>@macroshot_app</strong></a>.
+        </p>
       </article>
     </div>
 
-    <!-- ENGLISH VERSION -->
-    <div class="container legal-layout lang-content-block" id="privacy-en">
-      <aside class="toc" aria-label="English Table of Contents">
-        <a href="#en-overview">1. Overview & Service Provider</a>
-        <a href="#en-collection">2. Information Collection & Use</a>
-        <a href="#en-permissions">3. Device Permissions</a>
-        <a href="#en-ai">4. AI Technologies</a>
-        <a href="#en-thirdparty">5. Third Party Access</a>
-        <a href="#en-deletion">6. Account & Data Deletion</a>
-        <a href="#en-children">7. Children's Privacy</a>
-        <a href="#en-security">8. Security</a>
-        <a href="#en-contact">9. Contact & Effective Date</a>
+    <!-- ENGLISH VERSION PANEL (OFFICIAL TEXT) -->
+    <div class="container legal-layout policy-panel" id="panel-en" role="tabpanel" aria-labelledby="tab-btn-en">
+      <aside class="toc" aria-label="Table of Contents English">
+        <a href="#en-policy">Privacy Policy Overview</a>
+        <a href="#en-collection">Information Collection & Use</a>
+        <a href="#en-permissions">Device Permissions</a>
+        <a href="#en-third-party">Third Party Access</a>
+        <a href="#en-opt-out">Opt-Out Rights</a>
+        <a href="#en-deletion">Account & Data Deletion</a>
+        <a href="#en-children">Children's Privacy</a>
+        <a href="#en-security">Security</a>
+        <a href="#en-changes">Changes & Contact</a>
       </aside>
 
       <article class="prose">
-        <h2 id="en-overview">1. Privacy Policy Overview</h2>
+        <h2 id="en-policy">Privacy Policy</h2>
         <p>
           This privacy policy applies to the <strong>MacroShot</strong> app (hereby referred to as "Application") for mobile devices that was created by <strong>Harry To (To Gia Huy)</strong> (hereby referred to as "Service Provider") as a Free service. This service is intended for use "AS IS".
         </p>
 
-        <h2 id="en-collection">2. Information Collection and Use</h2>
+        <h2 id="en-collection">Information Collection and Use</h2>
         <p>The Application collects information when you download and use it. This information may include information such as:</p>
         <ul>
           <li>Your device's Internet Protocol address (e.g. IP address)</li>
@@ -206,23 +213,25 @@
         </ul>
         <p>The Application does not gather precise information about the location of your mobile device.</p>
         <p>
-          For a better experience, while using the Application, the Service Provider may require you to provide us with certain personally identifiable information, including but not limited to: <strong>Your name, email address, phone number, User ID, food photos, health and fitness information (such as weight, BMI, nutritional logs), and device/crash logs</strong>. The information that the Service Provider request will be retained by them and used as described in this privacy policy.
+          The Application uses Artificial Intelligence (AI) technologies to enhance user experience and provide certain features. The AI components may process user data to deliver personalized content, recommendations, or automated functionalities. All AI processing is performed in accordance with this privacy policy and applicable laws. If you have questions about the AI features or data processing, please contact the Service Provider.
+        </p>
+        <p>
+          The Service Provider may use the information you provided to contact you from time to time to provide you with important information, required notices and marketing promotions.
+        </p>
+        <p>
+          For a better experience, while using the Application, the Service Provider may require you to provide us with certain personally identifiable information, including but not limited to <strong>Your name, email address, phone number, User ID, food photos, health and fitness information (such as weight, BMI, nutritional logs), and device/crash logs</strong>. The information that the Service Provider request will be retained by them and used as described in this privacy policy.
         </p>
 
-        <h2 id="en-permissions">3. Device Permissions</h2>
+        <h2 id="en-permissions">Device Permissions</h2>
         <p>
           To provide core functionalities, the Application may request permission to access your device's <strong>Camera and Photo Library</strong>. This access is strictly used to allow you to take or upload photos of your food for the AI-powered recognition and calorie tracking features. Images are processed securely and are not shared with unauthorized third parties. You can revoke these permissions at any time through your device's settings.
         </p>
 
-        <h2 id="en-ai">4. Artificial Intelligence (AI) Technologies</h2>
+        <h2 id="en-third-party">Third Party Access</h2>
         <p>
-          The Application uses Artificial Intelligence (AI) technologies to enhance user experience and provide certain features. The AI components may process user data to deliver personalized content, recommendations, or automated functionalities. All AI processing is performed in accordance with this privacy policy and applicable laws. If you have questions about the AI features or data processing, please contact the Service Provider.
+          Only aggregated, anonymized data is periodically transmitted to external services to aid the Service Provider in improving the Application and their service. The Service Provider may share your information with third parties in the ways that are described in this privacy statement.
         </p>
-
-        <h2 id="en-thirdparty">5. Third Party Access</h2>
-        <p>
-          Only aggregated, anonymized data is periodically transmitted to external services to aid the Service Provider in improving the Application and their service. Below are the links to the Privacy Policy of the third-party service providers used by the Application:
-        </p>
+        <p>Please note that the Application utilizes third-party services that have their own Privacy Policy about handling data. Below are the links to the Privacy Policy of the third-party service providers used by the Application:</p>
         <ul>
           <li><a href="https://www.google.com/policies/privacy/" target="_blank" rel="noopener noreferrer">Google Play Services</a></li>
           <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Google Analytics for Firebase</a></li>
@@ -235,49 +244,56 @@
           <li>with their trusted services providers who work on their behalf, do not have an independent use of the information we disclose to them, and have agreed to adhere to the rules set forth in this privacy statement.</li>
         </ul>
 
-        <h2 id="en-deletion">6. Account and Data Deletion Policy</h2>
+        <h2 id="en-opt-out">Opt-Out Rights</h2>
+        <p>
+          You can stop all collection of information by the Application easily by uninstalling it. You may use the standard uninstall processes as may be available as part of your mobile device or via the mobile application marketplace or network.
+        </p>
+
+        <h2 id="en-deletion">Account and Data Deletion Policy</h2>
         <p>
           The Service Provider will retain User Provided data for as long as you use the Application and for a reasonable time thereafter. You have the right to request the deletion of your account and all associated personal data at any time.
         </p>
-        <div style="background:var(--soft); border:1px solid var(--line); border-radius:18px; padding:24px; margin:20px 0;">
+        
+        <div style="background:var(--soft); border:1px solid var(--line); border-radius:18px; padding:22px; margin:20px 0;">
           <h3 style="margin-top:0; color:var(--green-dark);">How to delete your account:</h3>
-          <ul>
+          <ul style="margin-bottom:0;">
             <li><strong>In-App:</strong> You can delete your account directly within the Application by navigating to the Settings screen and selecting the "Delete Account" option.</li>
-            <li><strong>On the Web:</strong> Alternatively, you can request account and data deletion by filling out our <a href="https://docs.google.com/forms/d/e/1FAIpQLSfkfOYF7XD1ssR72S_Ib4PZiCYGVyLqi0vvT-VX6r54H1uurA/viewform" target="_blank" rel="noopener noreferrer">Account Deletion Request Form</a> or by contacting the Service Provider directly at <a href="mailto:giahuyto3107@gmail.com">giahuyto3107@gmail.com</a>.</li>
+            <li><strong>On the Web:</strong> Alternatively, you can request account and data deletion by filling out our <a href="https://docs.google.com/forms/d/e/1FAIpQLSfkfOYF7XD1ssR72S_Ib4PZiCYGVyLqi0vvT-VX6r54H1uurA/viewform" target="_blank" rel="noopener noreferrer"><strong>Account Deletion Request Form</strong></a> or by contacting the Service Provider directly at <a href="mailto:giahuyto3107@gmail.com"><strong>giahuyto3107@gmail.com</strong></a>.</li>
           </ul>
         </div>
-        <p>Upon receiving your request, the Service Provider will permanently delete your account and associated personal data (including health logs and photos) from our servers in a reasonable timeframe, except for data required to be retained by law.</p>
+        <p>
+          Upon receiving your request, the Service Provider will permanently delete your account and associated personal data (including health logs and photos) from our servers in a reasonable timeframe, except for data required to be retained by law.
+        </p>
 
-        <h2 id="en-children">7. Children's Privacy</h2>
-        <p>The Service Provider does not use the Application to knowingly solicit data from or market to children under the age of 13.</p>
-        <p>The Application does not address anyone under the age of 13. In the case the Service Provider discover that a child under 13 has provided personal information, the Service Provider will immediately delete this from their servers. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact the Service Provider (<a href="mailto:giahuyto3107@gmail.com">giahuyto3107@gmail.com</a>).</p>
+        <h2 id="en-children">Children</h2>
+        <p>
+          The Service Provider does not use the Application to knowingly solicit data from or market to children under the age of 13.
+        </p>
+        <p>
+          The Application does not address anyone under the age of 13. The Service Provider does not knowingly collect personally identifiable information from children under 13 years of age. In the case the Service Provider discover that a child under 13 has provided personal information, the Service Provider will immediately delete this from their servers. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact the Service Provider (<a href="mailto:giahuyto3107@gmail.com">giahuyto3107@gmail.com</a>) so that they will be able to take the necessary actions.
+        </p>
 
-        <h2 id="en-security">8. Security</h2>
-        <p>The Service Provider is concerned about safeguarding the confidentiality of your information. The Service Provider provides physical, electronic, and procedural safeguards to protect information the Service Provider processes and maintains.</p>
+        <h2 id="en-security">Security</h2>
+        <p>
+          The Service Provider is concerned about safeguarding the confidentiality of your information. The Service Provider provides physical, electronic, and procedural safeguards to protect information the Service Provider processes and maintains.
+        </p>
 
-        <h2 id="en-contact">9. Changes & Contact Us</h2>
-        <p>This Privacy Policy may be updated from time to time. This privacy policy is effective as of <strong>2026-04-28</strong>.</p>
-        <p>If you have any questions regarding privacy while using the Application, please contact the Service Provider via email at <a href="mailto:giahuyto3107@gmail.com"><strong>giahuyto3107@gmail.com</strong></a>.</p>
-        <hr style="margin-top:30px; border:0; border-top:1px solid var(--line);">
-        <p style="font-size:0.82rem; color:var(--muted);">This privacy policy page was generated by <a href="https://app-privacy-policy-generator.nisrulz.com/" target="_blank" rel="noopener noreferrer">App Privacy Policy Generator</a></p>
+        <h2 id="en-changes">Changes, Consent and Contact Us</h2>
+        <p>
+          This Privacy Policy may be updated from time to time for any reason. The Service Provider will notify you of any changes to the Privacy Policy by updating this page with the new Privacy Policy. You are advised to consult this Privacy Policy regularly for any changes, as continued use is deemed approval of all changes.
+        </p>
+        <p>
+          <strong>This privacy policy is effective as of 2026-04-28</strong>
+        </p>
+        <p>
+          <strong>Your Consent:</strong> By using the Application, you are consenting to the processing of your information as set forth in this Privacy Policy now and as amended by us.
+        </p>
+        <p>
+          <strong>Contact Us:</strong> If you have any questions regarding privacy while using the Application, or have questions about the practices, please contact the Service Provider via email at <a href="mailto:giahuyto3107@gmail.com"><strong>giahuyto3107@gmail.com</strong></a>.
+        </p>
       </article>
     </div>
   </main>
-
-  <script>
-    function togglePrivacyLang(lang) {
-      document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
-      document.querySelectorAll('.lang-content-block').forEach(block => block.classList.remove('active'));
-
-      if (lang === 'en') {
-        document.getElementById('btn-lang-en').classList.add('active');
-        document.getElementById('privacy-en').classList.add('active');
-      } else {
-        document.getElementById('btn-lang-vi').classList.add('active');
-        document.getElementById('privacy-vi').classList.add('active');
-      }
-    }
-  </script>
 
   <footer class="site-footer">
     <div class="container footer-grid">
@@ -290,13 +306,53 @@
       </div>
 
       <div class="footer-links-group">
-        <a href="https://play.google.com/store/apps/details?id=com.togiahuy.macroshot&pcampaignid=web_share" target="_blank" rel="noopener" style="font-weight:750; color:var(--green-dark);">Google Play Store</a>
-        <a href="https://www.instagram.com/macroshot_app/" target="_blank" rel="noopener">Instagram (@macroshot_app)</a>
+        <a href="https://play.google.com/store/apps/details?id=com.togiahuy.macroshot&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" style="font-weight:750; color:var(--green-dark);">Google Play Store</a>
+        <a href="https://www.instagram.com/macroshot_app/" target="_blank" rel="noopener noreferrer">Instagram (@macroshot_app)</a>
         <a href="../support/">Hỗ trợ</a>
         <a href="./">Quyền riêng tư</a>
         <a href="../terms/">Điều khoản</a>
       </div>
     </div>
   </footer>
+
+  <!-- Language Switcher Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const btnVi = document.getElementById('tab-btn-vi');
+      const btnEn = document.getElementById('tab-btn-en');
+      const panelVi = document.getElementById('panel-vi');
+      const panelEn = document.getElementById('panel-en');
+
+      function switchLang(lang) {
+        if (lang === 'en') {
+          btnVi.classList.remove('active');
+          btnVi.setAttribute('aria-selected', 'false');
+          btnEn.classList.add('active');
+          btnEn.setAttribute('aria-selected', 'true');
+          panelVi.classList.remove('active');
+          panelEn.classList.add('active');
+          window.location.hash = '#en';
+        } else {
+          btnEn.classList.remove('active');
+          btnEn.setAttribute('aria-selected', 'false');
+          btnVi.classList.add('active');
+          btnVi.setAttribute('aria-selected', 'true');
+          panelEn.classList.remove('active');
+          panelVi.classList.add('active');
+          window.location.hash = '#vi';
+        }
+      }
+
+      if (btnVi && btnEn) {
+        btnVi.addEventListener('click', function() { switchLang('vi'); });
+        btnEn.addEventListener('click', function() { switchLang('en'); });
+      }
+
+      // Check URL Hash on load
+      if (window.location.hash === '#en') {
+        switchLang('en');
+      }
+    });
+  </script>
 </body>
 </html>

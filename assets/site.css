@@ -1198,6 +1198,50 @@ h3 {
   font-size: 0.92rem;
 }
 
+/* Language Switcher for Legal / Policy Pages */
+.lang-switcher-wrap {
+  display: inline-flex;
+  align-items: center;
+  background: var(--soft-alt);
+  border: 1px solid var(--line);
+  padding: 4px;
+  border-radius: 999px;
+  gap: 4px;
+  margin: 16px 0;
+}
+
+.lang-tab-btn {
+  border: none;
+  background: transparent;
+  padding: 8px 18px;
+  border-radius: 999px;
+  font-size: 0.88rem;
+  font-weight: 750;
+  color: var(--muted);
+  cursor: pointer;
+  transition: all 0.18s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.lang-tab-btn:hover {
+  color: var(--ink);
+}
+
+.lang-tab-btn.active {
+  background: var(--paper);
+  color: var(--green-deep);
+  box-shadow: var(--shadow-sm);
+}
+
+.policy-panel {
+  display: none;
+}
+
+.policy-panel.active {
+  display: block;
+}
+
 /* Responsive Media Queries */
 @media (max-width: 960px) {
   .hero-grid,
